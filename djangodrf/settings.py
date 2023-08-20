@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-psb0xk=!ti54@(&c01^%3w^%m%bnhhsy8p)crxy$ot*c#08)1g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -60,7 +60,7 @@ ROOT_URLCONF = "djangodrf.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
